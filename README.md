@@ -83,6 +83,10 @@ Technologies used in the project:
 *   React Router DOM – For page navigation
 *   Git & GitHub – For version control and collaboration
 
+<h2>⚠️Disclaimer</h2>
+<p>📱 The website currently works great on laptops and desktops. I'm working on improving the mobile version so it looks better and works smoothly on phones and tablets too. A mobile-friendly update is coming soon!
+</p>
+
 <h2>🛡️ License:</h2>
 
 This project is licensed under the This project is licensed under the MIT License.
