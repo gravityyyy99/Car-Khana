@@ -1,0 +1,53 @@
+/* Car Category Page Styles */
+.car-category {
+    padding: 2rem;
+    background-color: black;
+    color: white;
+  }
+  
+  .car-category h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: red;
+    text-align: center;
+  }
+  
+  .car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .car-card {
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #444; /* Add a subtle border */
+  }
+  
+  .car-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .car-card img {
+    width: 100%;
+    height: 180px; /* Slightly taller image */
+    object-fit: cover;
+    border-bottom: 1px solid #444; /* Add a border below the image */
+  }
+  
+  .car-card h3 {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 0 1rem; /* Add padding to the text */
+    color: white; /* Ensure text is white */
+  }
+  
+  .car-card p {
+    font-size: 0.9rem;
+    color: #ccc; /* Light gray text for description */
+    padding: 0 1rem 1rem; /* Add padding to the text */
+  }

@@ -1,0 +1,180 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black; /* Black background for all pages */
+  color: white; /* White text for better contrast */
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header nav a:hover {
+  background-color: #555;
+  color: red; /* Red hover effect */
+}
+
+.header nav a.active {
+  background-color: red; /* Red active state */
+  color: black; /* Black text for active state */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  transition: left 0.3s;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.sidebar nav a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav a:hover {
+  background-color: #555;
+  color: red; /* Red hover effect */
+}
+
+.sidebar nav a.active {
+  background-color: red; /* Red active state */
+  color: black; /* Black text for active state */
+}
+
+/* Main Content Styles */
+.home,
+.about,
+.cars,
+.merch {
+  flex: 1;
+  padding: 2rem;
+  background-color: black; /* Black background for all pages */
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+}
+
+/* Video Container Styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+/* Welcome Message Styles */
+.welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.welcome-message h1 {
+  font-size: 4rem; /* Larger font size */
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Stronger shadow for better visibility */
+  white-space: nowrap; /* Ensures text stays in one line */
+}
+
+/* Car Section Styles */
+.car-section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #222; /* Dark gray background for car sections */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White shadow for contrast */
+}
+
+.car-section h2 {
+  color: white; /* White text for better contrast */
+  margin-bottom: 0.5rem;
+}
+
+.car-section p {
+  color: #ccc; /* Light gray text for better contrast */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .welcome-message h1 {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+  }
+
+  .home,
+  .about,
+  .cars,
+  .merch {
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+}

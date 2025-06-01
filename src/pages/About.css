@@ -1,0 +1,53 @@
+/* About Section Styles */
+.about {
+    padding: 4rem 2rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInDown 1.5s ease-in-out;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
